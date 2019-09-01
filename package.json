@@ -1,0 +1,30 @@
+{
+  "name": "hireme",
+  "version": "1.0.0",
+  "description": "Rays website",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test",
+    "start": "webpack --mod development --watch"
+  },
+  "keywords": [
+    "career"
+  ],
+  "author": "Ray Lin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
