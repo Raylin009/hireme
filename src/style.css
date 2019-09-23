@@ -1,0 +1,11 @@
+.wraper {
+  scale: 100%;
+}
+
+div {
+  padding:10px;
+}
+
+div > section {
+  background-color: aliceblue;
+}

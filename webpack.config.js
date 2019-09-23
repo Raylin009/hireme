@@ -14,8 +14,16 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.css$/,
+        include: `${__dirname}/src`,
+        use: ['style-loader','css-loader']
       }
     ]
+  },
+  devServer: {
+    contentBase: './dist',
   },
   plugins: [htmlPlugin]
 };
