@@ -18,7 +18,15 @@ module.exports = {
       {
         test: /\.css$/,
         include: `${__dirname}/src`,
-        use: ['style-loader','css-loader']
+        use: [
+          { loader: 'style-loader'},
+          { loader: 'css-loader',
+            options: {
+              modules:{localIdentName: '[name]_[local]'},
+              localsConvention: 'asIs',
+            },
+          }
+        ]
       }
     ]
   },
